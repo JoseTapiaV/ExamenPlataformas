@@ -1,6 +1,9 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Actualizar-libro</ion-title>
+    <ion-title class="ion-text-start">Actualizar</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/welcome" color="dark" routerLink="../tabinical"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -22,9 +25,9 @@
           </ion-button>
         </ion-buttons>
       </ion-item>
-      <ion-item>
-        <img class="image" [src]="libro.foto">
-      </ion-item>
+      
+        <img class="avatar" [src]="libro.foto">
+      
       <ion-item>
         <ion-label class="normal" position="floating">
           ISBN

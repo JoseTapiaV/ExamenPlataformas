@@ -1,4 +1,4 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>INICIO DE SESION</ion-title>
   </ion-toolbar>
@@ -41,13 +41,42 @@
     </div>
     <div class="social-btns">
 
-      <ion-button fill="clear" class="googlebtn ion-no-padding">
+      <ion-button  (click)="googleLogin()" fill="clear" class="googlebtn ion-no-padding">
         <ion-img src="assets/icon/logoGoogle.png"></ion-img>
       </ion-button>
-
-
     </div>
+</ion-content> -->
 
 
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
 
+<ion-content>
+  <div>
+
+    <div>
+      <img class="avatar"
+        src="../../assets/img/login.png"
+        alt="Imagen inicio de sesion">
+
+        <ion-item >
+          <ion-icon name="person-circle-outline"></ion-icon>
+          <ion-input [(ngModel)]="user.email" type="text" placeholder="Ingrese su Usuario" class="user" id="username" required=""></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="lock-closed-outline"></ion-icon>
+          <ion-input [(ngModel)]="user.password" type="password" placeholder="Ingrese su Contraseña" class="contra" id="password" required=""></ion-input>
+        </ion-item>
+
+        <ion-button class="ingresar" expand="block" color="dark" (click)="login(user.password)">Ingresar</ion-button>
+
+      <ion-button class="registrar" type="submit" expand="block" color="dark" (click)="googleLogin()">Google
+        <ion-icon name="logo-google"></ion-icon>
+      </ion-button>
+    </div>
+  </div>
 </ion-content>
