@@ -90,7 +90,7 @@ export class ReservarPage implements OnInit {
     console.log(this.cantidad)
     if (this.cantidad > 0) {
       if (this.libro.Cantidad >= this.cantidad && this.libro.Cantidad >= 0) {
-        this.mostrarMensaje("si se puede guardar")
+        this.mostrarMensaje("Reservado")
 
 
         this.libro.Cantidad = this.libro.Cantidad - this.cantidad
@@ -115,7 +115,7 @@ export class ReservarPage implements OnInit {
 
       } else
         if (this.libro.Cantidad < this.cantidad) {
-          this.mostrarMensaje("no se puede guardar")
+          this.mostrarMensaje("No es posible reservar")
           console.log("no se puede guardar")
         }
     } else {
