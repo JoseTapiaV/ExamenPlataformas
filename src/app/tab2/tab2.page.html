@@ -8,38 +8,31 @@
 </ion-header>
 
 
-  <ion-content>
+<ion-content>
 
+  <div class="fondo">
+    <ion-card *ngFor="let libro of libros1" class="user-list">
 
-  
-      <div class="fondo">
-        <ion-card *ngFor="let libro of libros1" class="user-list">
-    
-          <ion-card-header>
-            <ion-card-title class="ion-text-center" >{{libro.titulo}}</ion-card-title>
-          </ion-card-header>
-          
-            <img class="avatar" src="{{libro.foto}}">
-          <ion-card-content>  
-        
-            <ion-card-subtitle><b>Codigo ISBN: </b>{{libro.codigoISBN}}</ion-card-subtitle>
-            <ion-card-subtitle><b>Autor </b>{{libro.autor}}</ion-card-subtitle>
-            <ion-card-subtitle><b>Editorial </b>{{libro.editorial}}</ion-card-subtitle>
-            <ion-card-subtitle><b>Categoria </b>{{libro.categoria}}</ion-card-subtitle>
-            <ion-card-subtitle><b>Cantidad </b>{{libro.Cantidad}}</ion-card-subtitle>
-        
-          </ion-card-content>
-          <ion-footer>
-            <ion-button color="secondary" shape="round" type="submit"  expand="full" (click)="VerCliente(libro.id)">
-              Ver Clientes</ion-button>
-            </ion-footer>
-            
-        </ion-card>
-     </div>
-  
-   
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">{{libro.titulo}}</ion-card-title>
+      </ion-card-header>
 
- 
+      <img class="avatar" src="{{libro.foto}}">
+      <ion-card-content>
+
+        <ion-card-subtitle><b>ISBN: </b>{{libro.codigoISBN}}</ion-card-subtitle>
+        <ion-card-subtitle><b>Autor: </b>{{libro.autor}}</ion-card-subtitle>
+        <ion-card-subtitle><b>Editorial: </b>{{libro.editorial}}</ion-card-subtitle>
+        <ion-card-subtitle><b>Categoria: </b>{{libro.categoria}}</ion-card-subtitle>
+        <ion-card-subtitle><b>Cantidad: </b>{{libro.Cantidad}}</ion-card-subtitle>
+
+      </ion-card-content>
+      <ion-footer>
+        <ion-button color="secondary" shape="round" type="submit" expand="full" (click)="VerCliente(libro.id)">
+          Ver Clientes</ion-button>
+      </ion-footer>
+
+    </ion-card>
+  </div>
+
 </ion-content>
-
-

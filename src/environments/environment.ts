@@ -5,12 +5,13 @@
 export const environment = {
   production: false,
   firebaseConfig : {
-    apiKey: "AIzaSyDVZNarmeZqWA9bJG7vgIwD7CT-mhEybYA",
-    authDomain: "veterinaria-26604.firebaseapp.com",
-    projectId: "veterinaria-26604",
-    storageBucket: "veterinaria-26604.appspot.com",
-    messagingSenderId: "879822857310",
-    appId: "1:879822857310:web:0581c653615c8580ac40cf"
+    apiKey: "AIzaSyAWpBTCUwDlmUwSswkn8MIX7rm-WaAPZY4",
+    authDomain: "veterinaria-c9e38.firebaseapp.com",
+    projectId: "veterinaria-c9e38",
+    storageBucket: "veterinaria-c9e38.appspot.com",
+    messagingSenderId: "46345560874",
+    appId: "1:46345560874:web:feec80f245a33c97c27453",
+    measurementId: "G-EK0HMXQ8YJ"
   }
 };
 

@@ -11,41 +11,30 @@
   <div class="fondo">
 
 
-    <ion-card  class="user-list">
-  
+    <ion-card class="user-list">
+
       <ion-card-header>
-        <ion-card-title class="ion-text-center" >{{libro.titulo}}</ion-card-title>
+        <ion-card-title class="ion-text-center">{{libro.titulo}}</ion-card-title>
       </ion-card-header>
-      
-        <img class="avatar" src="{{libro.foto}}">
-      <ion-card-content>  
-    
-        <ion-card-subtitle><b>Codigo ISBN: </b>{{libro.codigoISBN}}</ion-card-subtitle>
-        <ion-card-subtitle><b>Autor </b>{{libro.autor}}</ion-card-subtitle>
-        <ion-card-subtitle><b>Editorial </b>{{libro.editorial}}</ion-card-subtitle>
-        <ion-card-subtitle><b>Categoria </b>{{libro.categoria}}</ion-card-subtitle>
-        <ion-card-subtitle><b>Cantidad </b>{{libro.Cantidad}}</ion-card-subtitle>
-     
+
+      <img class="avatar" src="{{libro.foto}}">
+      <ion-card-content class="ion-text-center">
+
+        <ion-card-subtitle><b>ISBN: </b>{{libro.codigoISBN}}</ion-card-subtitle>
+        <ion-card-subtitle><b>Autor: </b>{{libro.autor}}</ion-card-subtitle>
+        <ion-card-subtitle><b>Editorial: </b>{{libro.editorial}}</ion-card-subtitle>
+        <ion-card-subtitle><b>Categoria: </b>{{libro.categoria}}</ion-card-subtitle>
+        <ion-card-subtitle><b>Cantidad: </b>{{libro.Cantidad}}</ion-card-subtitle>
+
       </ion-card-content>
 
       <ion-footer>
-      
-     
-      
-      
-    
-  
-     
-        
+        <h1 class="ion-text-center">Ingrese cantidad</h1>
+        <ion-input placeholder="Ingrese la cantidad" [(ngModel)]="cantidad" inputmode="number" class="ion-text-center"></ion-input>
+        <ion-button color="secondary" shape="round" type="submit" expand="full" (click)="guardar()">
+          Guardar</ion-button>
 
-        <h1>Ingrese cantidad</h1>
-       
-        <ion-input name="celular" class="normal" [(ngModel)]="cantidad" inputmode="number">
-        </ion-input>
-      <ion-button color="secondary" shape="round" type="submit"  expand="full" (click)="guardar()">
-        Guardar</ion-button>
-        
       </ion-footer>
     </ion-card>
- </div>
+  </div>
 </ion-content>
